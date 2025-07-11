@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clash Royale 3D</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/three@0.132.2/build/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.132.2/examples/js/loaders/GLTFLoader.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.132.2/examples/js/controls/OrbitControls.js"></script>
+    <script src="data/config.js"></script>
+    <script src="data/cards.js"></script>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div id="game-container">
+        <canvas id="game-canvas"></canvas>
+        
+        <div id="ui-container">
+            <div id="timer">03:00</div>
+            <div id="elixir-bar">
+                <div id="elixir-fill"></div>
+                <span id="elixir-count">10</span>
+            </div>
+            
+            <div id="cards-container">
+                <div class="card" data-card-id="0">
+                    <img src="assets/textures/cards/shadow_knight.png" alt="فارس الظل">
+                    <div class="card-cost">4</div>
+                </div>
+                <div class="card" data-card-id="1">
+                    <img src="assets/textures/cards/forest_sniper.png" alt="قناص الغابة">
+                    <div class="card-cost">4</div>
+                </div>
+                <div class="card" data-card-id="2">
+                    <img src="assets/textures/cards/fire_spirit.png" alt="روح النار">
+                    <div class="card-cost">3</div>
+                </div>
+                <div class="card" data-card-id="3">
+                    <img src="assets/textures/cards/cannon.png" alt="المدفع">
+                    <div class="card-cost">4</div>
+                </div>
+            </div>
+            
+            <div id="controls">
+                <button id="start-btn">بدء المعركة</button>
+                <button id="restart-btn">إعادة تشغيل</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
